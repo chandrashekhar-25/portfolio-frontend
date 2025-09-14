@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { motion } from "framer-motion";
 import project1 from "../assets/projects/project-1.jpg";
 import project2 from "../assets/projects/project-2.jpg";
@@ -16,7 +16,7 @@ const Projects = () => {
     useEffect(() => {
         const fetchProjects = async () => {
             try {
-                const response = await fetch("https://portfoback.vercel.app/api/content/projects");
+                const response = await fetch("https://portfolio-backend-eight-pi.vercel.app/api/content/projects");
                 const data = await response.json();
                 setProjects(data);
             } catch (error) {

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import aboutImg from '../assets/about.jpg';
 import { motion } from "framer-motion";
 
@@ -10,7 +10,7 @@ function About() {
     useEffect(() => {
         const fetchAbout = async () => {
             try {
-                const response = await fetch("https://portfoback.vercel.app/api/content/about");
+                const response = await fetch("https://portfolio-backend-eight-pi.vercel.app/api/content/about");
                 if (!response.ok) throw new Error("Failed to fetch about information");
                 const data = await response.json();
                 setAboutText(data[0].aboutText);

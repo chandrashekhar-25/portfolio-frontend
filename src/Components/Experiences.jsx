@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { motion } from "framer-motion";
 
 function Experiences() {
@@ -9,7 +9,7 @@ function Experiences() {
     useEffect(() => {
         const fetchExperiences = async () => {
             try {
-                const response = await fetch("https://portfoback.vercel.app/api/content/experiences");
+                const response = await fetch("https://portfolio-backend-eight-pi.vercel.app/api/content/experiences");
                 if (!response.ok) throw new Error("Failed to fetch experiences");
                 const data = await response.json();
                 setExperiences(data);

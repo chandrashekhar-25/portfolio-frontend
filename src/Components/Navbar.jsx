@@ -27,8 +27,8 @@ const Navbar = () => {
                 </a>
 
                 <a
-                    href="#"
-                    // target="_blank"
+                    href="https://x.com/chandra20357713"
+                    target="_blank"
                     rel="noopener noreferrer"
                     className="cursor-pointer hover:scale-110 hover:text-blue-500 transition-transform duration-300 ease-in-out"
                 >
@@ -36,7 +36,7 @@ const Navbar = () => {
                 </a>
 
                 <a
-                    href="https://www.instagram.com/abd___786"
+                    href="https://www.instagram.com/rohit_bhagat507"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="cursor-pointer hover:scale-110 hover:text-pink-500 transition-transform duration-300 ease-in-out"
@@ -44,7 +44,7 @@ const Navbar = () => {
                     <FaInstagram />
                 </a>
                 <a
-                    href="https://wa.me/+918200835840"
+                    href="https://wa.me/+919110192762"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="cursor-pointer hover:scale-110 hover:text-green-500 transition-transform duration-300 ease-in-out"

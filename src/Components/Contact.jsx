@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { motion } from "framer-motion";
 
 const Contact = () => {
@@ -9,7 +9,7 @@ const Contact = () => {
     useEffect(() => {
         const fetchContact = async () => {
             try {
-                const response = await fetch("https://portfoback.vercel.app/api/content/contact");
+                const response = await fetch("https://portfolio-backend-eight-pi.vercel.app/api/content/contact");
                 if (!response.ok) throw new Error("Failed to fetch contact information");
                 
                 const data = await response.json();

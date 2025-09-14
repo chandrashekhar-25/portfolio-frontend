@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import profilePic from '../assets/kevinRushProfile.jpg'
 import { motion } from "framer-motion";
 
@@ -13,7 +13,7 @@ function PersonalInfo() {
     useEffect(() => {
         const fetchBasicContent = async () => {
             try {
-                const response = await fetch("https://portfoback.vercel.app/api/content/profession-info");
+                const response = await fetch("https://portfolio-backend-eight-pi.vercel.app/api/content/profession-info");
                 const data = await response.json();
                 setBasicContent(data[0]); // Assuming there's only one document in the response array
             } catch (error) {
