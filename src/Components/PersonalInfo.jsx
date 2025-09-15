@@ -15,7 +15,7 @@ function PersonalInfo() {
             try {
                 const response = await fetch("https://portfolio-backend-eight-pi.vercel.app/api/content/profession-info");
                 const data = await response.json();
-                setBasicContent(data[0]); // Assuming there's only one document in the response array
+                setBasicContent(data); // Assuming there's only one document in the response array
             } catch (error) {
                 console.error("Error fetching profession info:", error);
             }

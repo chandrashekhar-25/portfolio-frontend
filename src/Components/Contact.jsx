@@ -11,10 +11,8 @@ const Contact = () => {
             try {
                 const response = await fetch("https://portfolio-backend-eight-pi.vercel.app/api/content/contact");
                 if (!response.ok) throw new Error("Failed to fetch contact information");
-                
                 const data = await response.json();
-                console.log(data,'response');
-                setContact(data[0]);
+                setContact(data);
             } catch (error) {
                 setError("Error fetching contact information");
                 console.error(error);
